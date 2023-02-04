@@ -6,7 +6,7 @@ import Link from "next/link";
 function Sidebar() {
   const { data: session } = useSession();
   return (
-    <div className="min-h-screen bg-cyan-300 w-1/5 border border-r-1 border-black relative">
+    <div className="min-h-screen bg-primary w-1/5 border border-r-1 border-black relative">
       <div className="flex flex-col justify-between">
         <div className="font-bold text-4xl w-full border-black p-4 items-center">
           <Link href="/">Title</Link>

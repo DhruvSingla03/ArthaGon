@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js", "scripts/seed.js", "pages/dashboard/warehouse/[warehouseId].jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js", "scripts/seed.js", "pages/dashboard/warehouse/[warehouseId].jsx", "pages/api/newBusiness.js", "pages/api/newCustomer.js"],
   "exclude": ["node_modules"]
 }
