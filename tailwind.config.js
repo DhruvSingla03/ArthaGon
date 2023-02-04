@@ -17,5 +17,18 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#F8CBA6",
+          secondary: "#FFE7CC",
+          accent: "#FFFBEB",
+          neutral: "#ECF9FF",
+          "base-100": "#ECF9FF",
+        },
+      },
+      "cyberpunk"],
+  },
 }
