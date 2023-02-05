@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import sidebar from "@/components/sidebar";
+import sidebar from "@/components/dashbord/sidebar";
 import { Tab } from "@headlessui/react";
 import { AiOutlineUser } from "react-icons/ai";
 import Container from "@/components/container";
 import { getSession, signIn, signOut, useSession } from "next-auth/react";
 import axios from "axios";
-import Sidebar from "@/components/sidebar";
+import Sidebar from "@/components/dashbord/sidebar";
 
 
 function DashBoard({ children }: any) {

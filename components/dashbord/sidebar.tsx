@@ -9,19 +9,19 @@ function Sidebar() {
     <div className="min-h-screen bg-primary w-1/5 border border-r-1 border-black relative">
       <div className="flex flex-col justify-between">
         <div className="font-bold text-4xl w-full border-black p-4 items-center">
-          <Link href="/">Title</Link>
+          <Link href="/">ArthaGon</Link>
         </div>
         <div className="justify-betweeen">
           <ul className="text-xl">
-            <button className="border-b-[1px] border-t-[2px] text-center mt-1 p-3 pt-5 w-full border-black">
-              Dashboard
-            </button>
-            <button className="border-b-[1px] text-center my-2 p-3 w-full border-black">
-              Warehouse
-            </button>
-            <button className="border-b-[1px] text-center my-2 p-2 w-full border-black">
+            <Link href={"/dashboard/"} className="border-b-[1px] border-t-[2px] text-center mt-1 p-3 pt-5 w-full border-black">
               Items
-            </button>
+            </Link>
+            <Link href={"/dashboard/transactions"} className="border-b-[1px] text-center my-2 p-3 w-full border-black">
+              Transactions
+            </Link>
+            <Link href={"/dashboard/profile"} className="border-b-[1px] text-center my-2 p-2 w-full border-black">
+              Profile
+            </Link>
           </ul>
         </div>
         {session?.user && <button onClick={()=>signOut()} className="absolute bottom-4 w-full items-center text-center text-xl border-t-[1px] border-black pt-2">
