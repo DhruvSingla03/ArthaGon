@@ -94,15 +94,12 @@ function DashIndex({items,businessId}:any) {
       </Head>
       <DashBoard>
         <div className='flex justify-between'>
-        <Card></Card>
-        <Card></Card>
-        
-
+        {/* <Card></Card> */}
         </div>
 
+        <AddItemModal businessId={businessId} />
         <ItemTable items={items} ChooseItem={ChooseItem}  />
 
-        <AddItemModal businessId={businessId} />
         <EditItemModal item={EditItem} />
 
 

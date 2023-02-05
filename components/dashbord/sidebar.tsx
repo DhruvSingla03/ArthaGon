@@ -13,15 +13,21 @@ function Sidebar() {
         </div>
         <div className="justify-betweeen">
           <ul className="text-xl">
-            <Link href={"/dashboard/"} className="border-b-[1px] border-t-[2px] text-center mt-1 p-3 pt-5 w-full border-black">
-              Items
-            </Link>
-            <Link href={"/dashboard/transactions"} className="border-b-[1px] text-center my-2 p-3 w-full border-black">
-              Transactions
-            </Link>
-            <Link href={"/dashboard/profile"} className="border-b-[1px] text-center my-2 p-2 w-full border-black">
-              Profile
-            </Link>
+            <div className="border-b-[1px] border-t-[2px] text-center mt-1 p-3 pt-5 w-full border-black">
+              <Link href={"/dashboard/"} >
+                Items
+              </Link>
+            </div>
+            <div className="border-b-[1px] text-center my-2 p-3 w-full border-black">
+              <Link href={"/dashboard/transactions"} >
+                Transactions
+              </Link>
+            </div>
+            <div className="border-b-[1px] text-center my-2 p-2 w-full border-black">
+              <Link href={"/dashboard/profile"} >
+                Profile
+              </Link>
+            </div>
           </ul>
         </div>
         {session?.user && <button onClick={()=>signOut()} className="absolute bottom-4 w-full items-center text-center text-xl border-t-[1px] border-black pt-2">
