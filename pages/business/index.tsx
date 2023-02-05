@@ -1,4 +1,4 @@
-'use client'
+
 
 import { UserContext } from '@/context/role'
 import React, { useContext, useEffect } from 'react'
