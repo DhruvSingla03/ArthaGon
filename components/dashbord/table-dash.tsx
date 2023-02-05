@@ -7,7 +7,7 @@ import { Item } from '@prisma/client'
 function ItemTable({ items,ChooseItem }: any) {
   const itemsArray:Item[] = items
   return (
-    <Container className="flex items-center flex-col w-full ">
+    <Container className="flex items-center flex-col w-full mt-3 ">
       <div className="overflow-x-auto border-black border-2 rounded-2xl w-full">
         <table className="table table-zebra w-full">
       <thead>
